@@ -1,0 +1,57 @@
+Operadores:
+  Aritméticos - Atribuição - Relacionais - Lógicos - Ternário.
+
+  # ARITMÉTICOS:
+    +  Adição
+    -  Subtração
+    *  Multiplicação
+    /  Divisão
+    %  Resto divisão inteira
+    ** Potência
+    Operadores Aritméticos possuem ordem de precedência e sua ordem dá-se:
+      1º () -- Parenteses
+      2º ** -- Potência
+      3º * ou / ou % -- Multiplicação OU Divisão OU Resto da divisão inteira.
+      4º - ou + -- Subtração ou Adição. 
+
+      Lembrando que a ordem de precedência se dá sempre da esquerda para a direita
+
+  # ATRIBUIÇÃO:
+    = -- O igual no JS como em outras linguagens de programação tem significado de atribuição (recebe)
+    EX: Let A = 15 -- Variável A recebe 15
+
+    ATRIBUIÇÃO SIMPLES:
+    var a = 5 + 3 -- Resultado 8
+
+    var b = a % 5 -- Resultado 3
+    
+    var c = 5 * b ** 2 -- Resultado 45 
+    -- Lembrando que devido a ordem de precedência b ** 2 é executado primeiro nesta operação.
+    
+    var d = 10 - a / 2 -- Resultado 6 
+    -- Lembrando que devido a ordem de precedência a / 2 é executado primeiro nesta operação.
+    
+    var e = 6 * 2 / d --  Resultado 2 
+    -- Apesar de * e / possuirem mesmo peso na ordem de precedência deve-se executar o que vem primeiro, neste caso 6 * 2.
+    
+    var f =  b % e + 4 / e -- Resultado 3  
+    -- pela precedência executa-se nesta ordem:
+       1º -- b % e
+       2º -- 4 / e
+       3º -- + por ultimo a adição dos dois resultados.
+
+    ATRIBUIÇÃO SIMPLES EX: n = 3
+    AUTO ATRIBUIÇÃO EX: n = n + 4
+
+    SIMPLIFICANDO AUTO ATRIBUIÇÃO:
+      n = n + 4 -- n += 4
+      n = n - 5 -- n -= 5
+      n = n * 4 -- n *= 4
+      n = n / 2 -- n /= 2
+      n = n ** 2 -- n **= 2
+      n = n % 5 -- n %= 5
+      
+
+
+
+      
