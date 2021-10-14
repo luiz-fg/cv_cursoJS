@@ -1,0 +1,86 @@
+# OPERADORES RELACIONAIS:
+  >  -- Maior que
+  <  -- Menor que
+  >= -- Maior ou Igual
+  <= -- Menor ou Igual
+  == -- Igual
+  != -- Diferente
+
+  Quando tem-se operadores aritméticos e relácionais juntos na mesma expressão,
+  primeiro resolvem-se os aritméticos e depois os relacionais.
+
+  Operadores relacionais não possuem ordem de precedência, quem aparecer primeiro executa lembrando que é sempre
+  da esquerda para a direita.
+
+  Ex: 
+    var a = 8
+    var b = 15
+    a <= b - 10.
+    ORDEM RESOLUÇÃO:
+      1º -- b - 10
+      2º -- a <= b
+      
+
+# OPERADORES DE IDENTIDADE:
+  5 == 5 -- true
+  5 == '5' -- true
+  5 === 5 -- false
+
+  5 != '5' -- false
+  5 !== '5' -- true
+
+  No JS == não testa o tipo, logo 5 e '5' são de tipos diferentes mas possuem
+  a mesma grandeza.
+  Para testarmos o tipo usa-se o operador de igualdade restrita que é representado
+  por === (3 simbolos de igual).
+  Em resumo testa se são identicos ou seja iguais em tipo e grandeza.
+
+  O mesmo aplica-se para o != pois são de tipos diferentes mas possuem a mesma grandeza logo irá retornar false pois para o JS eles são iguais por terem a mesma grandeza.
+
+  para sabermos se são de tipos diferentes usamos !== (Desigual restrito), portanto 5 !== '5' irá retornar true
+
+# OPERADORES LÓGICOS:
+  !  -- Negação (não) -- Operador Unário
+  && -- Conjunção (e - e lógico) -- Operador Binário
+  || -- Disjunção (ou - ou lógico) -- Operador Binário
+  
+  EX:
+    !caneta Azul -- qualquer caneta menos a Azul --
+    caneta azul && caneta vermelha -- somente válido se atender aos 2, precisa ter 1 caneta azul e 1 vermelha.
+    caneta azul || caneta vermelha -- uma ou outra, tanto faz se for azul ou vermelha.
+  
+  EX UNÁRIO:
+    !true -- false
+    !false -- true
+  
+  EX BINÁRIO:
+    true  && true   -- true
+    true  && false  -- false
+    false && true   -- false
+    false && false  -- false
+
+    true  || true   -- true
+    true  || false  -- true
+    false || true   -- true
+    false || false  -- false
+
+    Quando tem-se operadores aritméticos, relácionais e lógicos juntos na mesma expressão
+    primeiro resolvem-se os aritméticos e depois os relacionais e por último os operadores lógicos.
+    Ex: 
+      var a = 5
+      var b = 8
+      a > b && b % 2 == 0
+      ORDEM RESOLUÇÃO:
+        1º -- b % 2 == 0
+        2º -- a > b
+        3º -- &&
+
+  Para os operadores lógicos a ordem de precedência é sempre:
+    1º -- não (!)
+    2º -- && (e)
+    3º -- || (ou)
+
+# OPERADOR TERNÁRIO:
+  ?: -- na mesma expressão
+  teste ? true : false
+  EX: media >= 7.0 ? "Aprovado" : "Reprovado"
