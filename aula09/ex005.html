@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conhecendo o DOM</title>
+  <style>
+    body {
+      background: rgb(68, 125, 199);
+      color: #fff;
+      font: normal 18pt Arial;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Iniciando estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong> DOM </strong> em JS </p>
+  <div id="msg" name="NomeMsg">Clique em mim</div>
+  <script>
+    window.document.write("Olá Mundo")  // Escreve no documento, não é melhor meio mas é o mais simples
+    window.document.write(window.document.charset + "  ---  ") // escreve qual o charset usado
+    window.document.write(window.navigator.appName + "  ---  ") // qual o nome do navegador
+    window.document.write(window.document.URL + "  ---  ") // qual minha url
+
+    // SELETORES
+
+    //Seleciona elementos pela tag( div, p, h1...) neste caso o primeiro paragrafo
+    var p1 = document.getElementsByTagName("p")[1]
+    // escreve na tela sem formatação -- somente o texto
+    document.write("Esta escrito: " + p1.innerText + "  ---  ")
+
+    // escreve na tela com formatação -- pega o html todo inclusive com as tags filhas.
+    document.write("Esta escrito: " + p1.innerHTML)
+
+    // Muda a cor do texto para azul
+    p1.style.color = 'blue'
+
+    //seleciona o body no DOM
+    var corpo = document.body
+
+    // Muda o background da pagina 
+    corpo.style.background = '#6959CD'
+
+
+    // seleciona a div pelo ID
+    var d = document.getElementById('msg')
+
+    // muda o background da div
+    d.style.background = 'red'
+
+    // muda o texto da div
+    d.innerText = 'estou esperando vc'
+
+    //Mesmo comando que acima porem completo (sem abreviação)
+    window.document.getElementById('msg').innerText = 'Olá'
+
+    // seleção por nome
+    var e = window.document.getElementsByName('NomeMsg')[0]
+
+
+  </script>
+
+</body>
+
+</html>
