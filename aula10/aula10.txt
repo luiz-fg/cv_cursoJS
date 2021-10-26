@@ -11,4 +11,4 @@ o que é DOM ?
 
 Eventos DOM - é tudo aquilo que possa acontecer com o elemento.
 
-Funções - São um conjunto de linhas que serão executadas somente quando um evento ocorrer.
+Funções - São um conjunto de linhas que serão executadas somente quando um evento ocorrer..
