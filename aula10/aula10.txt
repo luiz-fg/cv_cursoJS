@@ -1,0 +1,14 @@
+o que é DOM ?
+  Document Object Model - é um facilitador dentro do navegador para dar acesso
+  aos elementos html5 diretamente para o JavaScript
+
+5 métodos para acessar elementos DOM dentro do JavaScript.
+  Por marca - document.getElementsByTagName()
+  por id - document.getElementById()
+  por nome - document.getElementsByName()
+  por classe - document.getElementsByClassName()
+  por seletor - document.querySelector() - document.querySelectorAll()
+
+Eventos DOM - é tudo aquilo que possa acontecer com o elemento.
+
+Funções - São um conjunto de linhas que serão executadas somente quando um evento ocorrer.
