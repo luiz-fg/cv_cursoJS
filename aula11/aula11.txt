@@ -1,0 +1,4 @@
+# No vsCodium o plugin Node Exec não existe -- não está no open-vsx.org
+  uma alternativa é o Code Runner.
+
+  
