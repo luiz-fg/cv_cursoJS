@@ -1,0 +1,15 @@
+funções - arrow functions, callback, funçoes anonimas, iife
+
+Javascript funcional
+
+objetos
+
+modularização
+
+regEx
+
+Json
+
+ajax
+
+nodejs
