@@ -1,0 +1,28 @@
+body
+{
+    background-color: #4682B4;
+    font: normal 15pt Arial;
+}
+
+.header
+{
+    text-align: center;
+    color: #fff;
+}
+
+.section
+{
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+    height: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    width: 450px;
+}
+
+.footer
+{
+    color: #fff;
+    text-align: center;
+}
