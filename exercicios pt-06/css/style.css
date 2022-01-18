@@ -1,0 +1,43 @@
+.header
+{
+    text-align: center;
+    color: rgb(78, 78, 78);
+}
+
+.section
+{
+    border: 1px solid #6d6e6e;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(143, 142, 142);
+    padding: 15px;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.container
+{
+    margin-bottom: 10px;
+}
+
+#select-tab
+{
+    padding: 4px;
+    border: 2px solid #9932cc;
+    outline: #9932cc;
+    
+}
+
+#select-tab option
+{
+    color: #9932cc;
+}
+
+#select-tab :checked
+{
+    color: rgb(42, 44, 42);
+}
+
+#input-num 
+{
+    color: #9932cc;
+}
