@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section class="section">
+
+        <div class="txt" id="txt">
+            <p>Numero (entre 1 e 100)
+                <input type="number" min="1" max="100" name="input-num" id="input-num" class="input-num">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+
+            
+
+            <p>
+                <select name="tabuada" id="select-tab" size="10"  >
+                    
+                </select>
+                
+            </p>
+            <p>
+                <input type="button" value="Finilizar" onclick="operacoes()">
+            </p>
+
+        </div>
+
+        <div class="res" >
+            
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; luiz-fg</p>
+
+    </footer>
+    
+</body>
+<script src="js/app.js"></script>
+</html>
